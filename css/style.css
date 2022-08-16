@@ -1,0 +1,347 @@
+.carousel-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15rem;
+  background-color: rgba(215, 205, 205, 0.823);
+}
+
+.carousel-icon {
+  height: 7rem;
+  width: 7rem;
+}
+
+/* 
+* Element we use to apply the shadow.
+* You can use any element instead. Just note 
+* it requires the use of `position: relative` 
+* and some `background`.
+*/
+.box {
+  /* Required properties */
+  position: relative;
+  background: white;
+  /* Use  your own styles here */
+  margin: 45px;
+  width: 250px;
+  height: 123px;
+}
+
+/* 
+* Provided by the Generator. 
+* This is what creates the shadow.
+*/
+.box:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+}
+
+/* 
+* Provided by the Generator.
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.box::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+}
+
+/* Custom styles for the demo */
+.stepbox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Nunito, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+  padding-bottom: 4rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.read-article {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  z-index: 999;
+  color: white;
+  background: #4070f4;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: arial;
+  text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 0 100px -20px, rgba(0, 0, 0, 0.3) 0 0 60px -15px;
+}
+
+.read-article:hover {
+  background: #0e4bf1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 0 100px -20px, rgba(0, 0, 0, 0.3) 0 0 60px 0px;
+}
+
+/*--------------------------------------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+  .stepbox {
+    display: none;
+    visibility: hidden;
+  }
+}
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text, .site-footer .social-icons {
+    text-align: center;
+  }
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+.nav-text {
+  padding-left: 2rem;
+}
+
+.section-headingoverline {
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.one {
+  position: relative;
+}
+
+h1.one:before {
+  content: "";
+  display: block;
+  border-top: solid 1px black;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+h1.one span {
+  background: #fff;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.px-5 {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
+}
+.gx-5 {
+  --bs-gutter-x: 3rem;
+}
+
+.p-5 {
+  padding: 3rem !important;
+}
+
+body {
+  margin: 0;
+}
+
+.parallax {
+  background-image: url(../img/background-parallax5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

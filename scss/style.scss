@@ -1,0 +1,19 @@
+@import './base/variables';
+@import './componentes/main';
+@import './componentes/timeline';
+@import './componentes/footer';
+@import './componentes/navbar';
+@import './componentes/headingoverline';
+@import './componentes/worksteps';
+
+body {
+    margin:0;
+}
+
+.parallax{
+    background-image: url(../img/background-parallax5.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

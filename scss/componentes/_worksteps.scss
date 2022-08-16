@@ -1,0 +1,32 @@
+.px-5 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .rounded-circle {
+    border-radius: 50% !important;
+  }
+  
+  .display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  @media (min-width: 1200px) {
+    .display-4 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  .gx-5 {
+    --bs-gutter-x: 3rem;
+  }
+  
+  .p-5 {
+    padding: 3rem !important;
+  }
